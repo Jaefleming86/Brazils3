@@ -8,5 +8,5 @@ output "cloudfront_distribution_domain_name" {
 }
 
 output "custom_domain" {
-  value = "https://revanwar.com"
+  value = "https://jaepassports.com"
 }

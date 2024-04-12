@@ -13,7 +13,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   enabled             = true
   default_root_object = "index.html"
 
-  aliases = ["revanwar.com"]
+  aliases = ["jaepassports.com"]
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD"]
@@ -43,7 +43,7 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
   }
 
   viewer_certificate {
-    acm_certificate_arn            = ""
+    acm_certificate_arn            = "arn:aws:acm:us-east-1:875232395140:certificate/244dac98-0a7f-4a36-9b0a-88995cae4844"
     ssl_support_method             = "sni-only"
     minimum_protocol_version       = "TLSv1.2_2021"
     cloudfront_default_certificate = false
